@@ -31,5 +31,15 @@ resource "aws_iam_policy" "default" {
 }
 
 data "aws_iam_policy_document" "default" {
+  statement {
+    actions = [
+      "s3:ListAllMyBuckets",
+    ]
 
+    effect = "Allow"
+
+    resources = [
+      "arn:aws:s3:::*",
+    ]
+  }
 }

@@ -1,1 +1,1 @@
-# terraform-aws-ubuntu-cloud-user-data
+# terraform-template-ubuntu-cloud-user-data

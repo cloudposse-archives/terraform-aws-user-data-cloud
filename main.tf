@@ -1,9 +1,9 @@
 # Define composite variables for resources
 module "label" {
-  source    = "git::https://github.com/cloudposse/tf_label.git?ref=tags/0.2.1"
-  namespace = "${var.namespace}"
-  name      = "${var.name}"
-  stage     = "${var.stage}"
+  source     = "git::https://github.com/cloudposse/tf_label.git?ref=tags/0.2.1"
+  namespace  = "${var.namespace}"
+  name       = "${var.name}"
+  stage      = "${var.stage}"
   attributes = ["cloud"]
 }
 

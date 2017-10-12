@@ -9,6 +9,6 @@ variable "region" {
 }
 
 variable "os" {
-  default = "ubuntu"
+  default     = "ubuntu"
   description = "Server OS that will execute user data script"
 }

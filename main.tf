@@ -1,13 +1,18 @@
 # Define composite variables for resources
 module "label" {
-  source    = "git::https://github.com/cloudposse/tf_label.git?ref=tags/0.1.0"
+  source    = "git::https://github.com/cloudposse/tf_label.git?ref=tags/0.2.1"
   namespace = "${var.namespace}"
-  name      = "${var.name}-cloud"
+  name      = "${var.name}"
   stage     = "${var.stage}"
+  attributes = ["cloud"]
+}
+
+locals {
+  template_path = "${path.module}/templates/${var.os}.sh"
 }
 
 data "template_file" "default" {
-  template = "${file("${path.module}/user_data.sh")}"
+  template = "${file(local.template_path)}"
 
   vars {
     namespace = "${var.namespace}"

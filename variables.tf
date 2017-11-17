@@ -8,7 +8,8 @@ variable "region" {
   description = "AWS region to manage instances in"
 }
 
-variable "os" {
-  default     = "ubuntu"
-  description = "Server OS that will execute user data script"
+variable "flavor" {
+  default     = "debian-systemd"
+  description = "Flavor denpends of OS and init system"
 }
+

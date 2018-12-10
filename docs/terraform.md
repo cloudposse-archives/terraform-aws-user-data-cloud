@@ -13,6 +13,6 @@
 
 | Name | Description |
 |------|-------------|
-| policy_arn |  |
-| user_data |  |
+| policy_arn | User data iam policy that should be executed on startup |
+| user_data | User data script that should be executed on startup |
 

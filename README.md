@@ -62,10 +62,10 @@ Available targets:
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | flavor | Flavor depends of OS and init system | string | `debian-systemd` | no |
-| name |  | string | - | yes |
-| namespace |  | string | - | yes |
+| name | Name  (e.g. `app` or `cluster`) | string | - | yes |
+| namespace | Namespace (e.g. `cp` or `cloudposse`) | string | - | yes |
 | region | AWS region to manage instances in | string | - | yes |
-| stage |  | string | - | yes |
+| stage | Stage (e.g. `prod`, `dev`, `staging`) | string | - | yes |
 
 ## Outputs
 
